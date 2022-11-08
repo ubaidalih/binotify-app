@@ -16,7 +16,7 @@ document.getElementById("add-button").addEventListener("click", () => {
     if (judul && penyanyi && tanggal_terbit && genre) {
         var params = 'judul='+judul
         document.getElementById("fail-upload").innerText = ""
-        http.open("POST", `http://localhost/tugas-besar-1/public/tambahalbum/check`)
+        http.open("POST", `http://localhost/binotify-app/public/tambahalbum/check`)
         http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
         http.send(params)
     } else {

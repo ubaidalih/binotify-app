@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Home</title>
-    <link rel="stylesheet" href="/tugas-besar-1/public/styles/login.css">
-    <link rel="stylesheet" href="/tugas-besar-1/public/styles/home.css">
+    <link rel="stylesheet" href="/binotify-app/public/styles/login.css">
+    <link rel="stylesheet" href="/binotify-app/public/styles/home.css">
 
 </head>
 <body>
@@ -17,7 +17,7 @@
         <div class="login-card">
             <div class="box">
                 <div class="header-logo">
-                    <img src="/tugas-besar-1/public/img/spotify-logo.png" style="display: block;
+                    <img src="/binotify-app/public/img/spotify-logo.png" style="display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;"/>
@@ -28,7 +28,7 @@
                 <p class="fail-upload" id="fail-upload"></p>
             </div>
             <div class="box">
-                <form action="/tugas-besar-1/public/login/logic" method="post" class="column-flex" id="login-form">
+                <form action="/binotify-app/public/login/logic" method="post" class="column-flex" id="login-form">
                     <div id="kiri" >
                         <div id="atas">   
                             <label for="email" style=" color: white; font-size: 1rem; ">Email</label>
@@ -51,10 +51,10 @@
                         <br>
                         <br>
                         <br>
-                        <a href="/tugas-besar-1/public/register/index">Register</a> <br>
+                        <a href="/binotify-app/public/register/index">Register</a> <br>
                         <br>
                         <br>
-                        <a class="login-as-guest" href="/tugas-besar-1/public/Home/user ">Login as Guest </a> <br>
+                        <a class="login-as-guest" href="/binotify-app/public/Home/user ">Login as Guest </a> <br>
                     </div>
                 </form>
                 
@@ -63,6 +63,6 @@
     </div>
     <!-- <div class="background">&dbsp</div> -->
 
-    <script src="/tugas-besar-1/public/js/login.js"></script>
+    <script src="/binotify-app/public/js/login.js"></script>
 </body>
 </html>

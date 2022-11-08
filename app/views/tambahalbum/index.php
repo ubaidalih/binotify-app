@@ -3,25 +3,25 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="/tugas-besar-1/public/styles/home.css">
-<link rel="stylesheet" href="/tugas-besar-1/public/styles/music.css">
-<link rel="stylesheet" href="/tugas-besar-1/public/styles/tambah.css">
+<link rel="stylesheet" href="/binotify-app/public/styles/home.css">
+<link rel="stylesheet" href="/binotify-app/public/styles/music.css">
+<link rel="stylesheet" href="/binotify-app/public/styles/tambah.css">
 </head>
 
 <body>
 <header>
   <div class="header-container">
       <div class="header-logo">
-        <a href="/tugas-besar-1/public/home/admin/"><img src="/tugas-besar-1/public/img/spotify-logo.png" /></a>
+        <a href="/binotify-app/public/home/admin/"><img src="/binotify-app/public/img/spotify-logo.png" /></a>
       </div>
       <ul class="navbar-desktop">
-        <li><a href="/tugas-besar-1/public/tambahlagu/index"> Tambah lagu </a></li>
-        <li><a href="/tugas-besar-1/public/tambahalbum/index"> Tambah album </a></li>
-        <li><a href="/tugas-besar-1/public/daftaralbum/admin/1"> Daftar album </a></li>
-        <li><a href="/tugas-besar-1/public/daftaruser/index"> Daftar user </a></li>
+        <li><a href="/binotify-app/public/tambahlagu/index"> Tambah lagu </a></li>
+        <li><a href="/binotify-app/public/tambahalbum/index"> Tambah album </a></li>
+        <li><a href="/binotify-app/public/daftaralbum/admin/1"> Daftar album </a></li>
+        <li><a href="/binotify-app/public/daftaruser/index"> Daftar user </a></li>
           <li role="separator"> </li>
           <div class="profpict-logo">
-              <img src="/tugas-besar-1/public/img/profpict.png"/>
+              <img src="/binotify-app/public/img/profpict.png"/>
           </div>
           <?php
               $username = $_COOKIE['username'];
@@ -30,7 +30,7 @@
             <?php 
             echo  $username;?> 
             </a></li>
-          <li><a href="/tugas-besar-1/public/home/logout"> Logout </a></li>
+          <li><a href="/binotify-app/public/home/logout"> Logout </a></li>
       </ul>
 </header>
 <div class="container">
@@ -40,7 +40,7 @@
         <h1>Tambah Album</h1>
         <p class="fail-upload" id="fail-upload"></p>
       <p>
-        <form id="mainform" action="/tugas-besar-1/public/tambahalbum/submit" method="POST" enctype="multipart/form-data">
+        <form id="mainform" action="/binotify-app/public/tambahalbum/submit" method="POST" enctype="multipart/form-data">
         <label for="judul">Judul:</label>
         <input type="text"  id="judul" name="judul">
 
@@ -65,6 +65,6 @@
   </div>
 </div>
 </div>
-<script src="/tugas-besar-1/public/js/album.js"></script>
+<script src="/binotify-app/public/js/album.js"></script>
 </body>
 </html>

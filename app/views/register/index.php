@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Home</title>
-    <link rel="stylesheet" href="/tugas-besar-1/public/styles/register.css">
+    <link rel="stylesheet" href="/binotify-app/public/styles/register.css">
 </head>
 <body>
     <div class="login-container">
@@ -15,7 +15,7 @@
         <div class="login-card">
             <div class="box">
                 <div class="header-logo">
-                    <img src="/tugas-besar-1/public/img/spotify-logo.png" style="display: block;
+                    <img src="/binotify-app/public/img/spotify-logo.png" style="display: block;
                             margin-left: auto;
                             margin-right: auto;
                             width: 50%;"/>
@@ -26,7 +26,7 @@
                 <p class="fail-upload" id="fail-upload"></p>
             </div>
             <div class="box">
-                <form action="/tugas-besar-1/public/register/logic" method="post" class="column-flex" id="register-form">
+                <form action="/binotify-app/public/register/logic" method="post" class="column-flex" id="register-form">
                 <div id="kiri">
                         <div id="satu"> 
                             <label for="email">Email</label>
@@ -61,7 +61,7 @@
                         <br> 
                         <span style="color: grey; font-family: 'Roboto', sans-serif;">Already have an account? Log In here. </span>
                         <br><br><br>
-                        <a href="/tugas-besar-1/public/login/index">Login</a>
+                        <a href="/binotify-app/public/login/index">Login</a>
                     </div>
                 </form>
             </div>
@@ -69,6 +69,6 @@
     </div>
     <!-- <div class="background">&dbsp</div> -->
 
-    <script src="/tugas-besar-1/public/js/register.js"></script>
+    <script src="/binotify-app/public/js/register.js"></script>
 </body>
 </html>

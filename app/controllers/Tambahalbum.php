@@ -29,7 +29,7 @@ class Tambahalbum extends Controller {
 
           // simpen di directory server
 
-          $audio_upload_path = "/tugas-besar-1/public/audio/".$new_file_name;      // ini ganti sesuai directory lagu
+          $audio_upload_path = "/binotify-app/public/audio/".$new_file_name;      // ini ganti sesuai directory lagu
           move_uploaded_file($tmp_name, __DIR__."/../../public/audio/".$new_file_name);
           return $audio_upload_path;
         }
@@ -41,7 +41,7 @@ class Tambahalbum extends Controller {
 
           // simpen di directory server
 
-          $file_upload_path = "/tugas-besar-1/public/img/".$new_img_name;   // ini ganti sesuai directory image
+          $file_upload_path = "/binotify-app/public/img/".$new_img_name;   // ini ganti sesuai directory image
           move_uploaded_file($tmp_name, __DIR__."/../../public/img/".$new_img_name);
           return $file_upload_path;
         }
@@ -65,7 +65,7 @@ class Tambahalbum extends Controller {
         $result = $this->model('Album')->get_album_detail($judul);
         if($result){
             //album udah ada
-            header("location: /tugas-besar-1/public/tambahalbum/index");
+            header("location: /binotify-app/public/tambahalbum/index");
         }
         else{
             $penyanyi = $_POST["penyanyi"];
@@ -81,11 +81,11 @@ class Tambahalbum extends Controller {
             $result = $this->model('Album')->insert_album($judul, $penyanyi, $new_date, $genre, $durasi, $img_upload_path);
 
             if($result){
-                header("location: tugas-besar-1/public/tambahalbum/index");
+                header("location: binotify-app/public/tambahalbum/index");
             }
             else{
                 //kasi error message
-                header("location: tugas-besar-1/public/tambahalbum/index");
+                header("location: binotify-app/public/tambahalbum/index");
             }
         }
     }

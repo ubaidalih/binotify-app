@@ -18,7 +18,7 @@ document.getElementById("login-button").addEventListener("click", () => {
     if (email && password) {
         var params = 'email='+email+'&password='+password;
         document.getElementById("fail-upload").innerText = ""
-        http.open("POST", `http://localhost/tugas-besar-1/public/login/login_check`)
+        http.open("POST", `http://localhost/binotify-app/public/login/login_check`)
         http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
         http.send(params)
     } else {

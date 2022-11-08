@@ -16,7 +16,7 @@ Install XAMPP, pastikan port untuk Apache dan MySQL tersedia.
 2. Nyalakan Apache dan MySQL pada XAMPP Control Panel
 3. Setup database dengan mengimport database pada `data/tubes-wbd.sql` (disarankan menggunakan phpmyadmin)
 4. Setting host, nama, username dan password database pada `app/models/Config.php`
-5. Jalankan http://localhost/tugas-besar-1/public
+5. Jalankan http://localhost/binotify-app/public
 
 
 # Screenshot

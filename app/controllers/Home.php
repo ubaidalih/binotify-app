@@ -71,7 +71,7 @@ class Home extends Controller {
             // unset($_COOKIE['role']);
             setcookie('role', '', time() - 3600, '/'); // empty value and old timestamp
         }
-        header("Location: /tugas-besar-1/public/Login");
+        header("Location: /binotify-app/public/Login");
         // setcookie("username","",time()-3600, "/");
         // setcookie("role","",time()-3600,"/");
     }

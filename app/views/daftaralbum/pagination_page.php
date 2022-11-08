@@ -7,9 +7,9 @@
     <?php else:?>
         <?php foreach($data['data'] as $index => $album) : ?>
             <?php if($_COOKIE['role']==1):?>
-                <a href="/tugas-besar-1/public/detailalbum/admin/<?php echo $album[0] ?>">
+                <a href="/binotify-app/public/detailalbum/admin/<?php echo $album[0] ?>">
             <?php else:?>
-                <a href="/tugas-besar-1/public/detailalbum/user/<?php echo $album[0] ?>">
+                <a href="/binotify-app/public/detailalbum/user/<?php echo $album[0] ?>">
             <?php endif;?>
                 <div class="music-card">
                     <div class="info">

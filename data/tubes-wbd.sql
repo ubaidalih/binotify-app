@@ -42,9 +42,9 @@ CREATE TABLE `album` (
 --
 
 INSERT INTO `album` (`album_id`, `Judul`, `Penyanyi`, `Total_duration`, `Image_path`, `Tanggal_terbit`, `Genre`) VALUES
-(2, 'album1', 'Dewa', 222, '/tugas-besar-1/public/img/IMG-635b5d0f4dc9d8.53198180.jpg', '2022-10-20', 'rock'),
-(3, 'album3', 'Tulus', 611, '/tugas-besar-1/public/img/IMG-6357d89a826ad4.05301344.jpg', '2022-10-18', 'pop'),
-(7, 'album2', 'Reality Club', 1389, '/tugas-besar-1/public/img/IMG-635b60f93b9b92.55301794.jpg', '2022-10-28', 'indie');
+(2, 'album1', 'Dewa', 222, '/binotify-app/public/img/IMG-635b5d0f4dc9d8.53198180.jpg', '2022-10-20', 'rock'),
+(3, 'album3', 'Tulus', 611, '/binotify-app/public/img/IMG-6357d89a826ad4.05301344.jpg', '2022-10-18', 'pop'),
+(7, 'album2', 'Reality Club', 1389, '/binotify-app/public/img/IMG-635b60f93b9b92.55301794.jpg', '2022-10-28', 'indie');
 
 -- --------------------------------------------------------
 
@@ -69,18 +69,18 @@ CREATE TABLE `song` (
 --
 
 INSERT INTO `song` (`song_id`, `Judul`, `Penyanyi`, `Tanggal_terbit`, `Genre`, `Duration`, `Audio_path`, `Image_path`, `album_id`) VALUES
-(2, 'Separuh Nafas', 'Dewa', '2022-10-19', 'rock', 222, '/tugas-besar-1/public/audio/SONG-635b68521659d5.73505554.mp3', '/tugas-besar-1/public/img/IMG-635b57543a1e91.06315844.jpg', 2),
-(11, 'Diorama', 'Tulus', '2022-10-18', 'pop', 178, '/tugas-besar-1/public/audio/SONG-635a1ad0969c20.38108542.mp3', '/tugas-besar-1/public/img/IMG-635a1ad09f2622.03636239.jpg', 3),
-(16, 'Manusia Kuat', 'Tulus', '2022-10-18', 'pop', 205, '/tugas-besar-1/public/audio/SONG-635b566dda70d8.50096966.mp3', '/tugas-besar-1/public/img/logo-1.jpg', 3),
-(19, 'Monokrom', 'Tulus', '2022-10-18', 'pop', 218, '/tugas-besar-1/public/audio/SONG-635b5b820cd953.03189072.mp3', '/tugas-besar-1/public/img/IMG-6358cea5277a28.93633235.jpg', 3),
-(33, 'Labirin', 'Tulus', '2022-10-18', 'pop', 192, '/tugas-besar-1/public/audio/SONG-635b5c95ddd2c9.34274480.mp3', '/tugas-besar-1/public/img/IMG-635b5c95e4e747.53640522.jpg', NULL),
-(34, 'Sewindu', 'Tulus', '2022-10-18', 'pop', 272, '/tugas-besar-1/public/audio/SONG-635b5cd2448e74.47739002.mp3', '/tugas-besar-1/public/img/IMG-635b5cd2488aa2.24606821.jpg', NULL),
-(35, 'Anything You Want', 'Reality Club', '2022-10-28', 'indie', 277, '/tugas-besar-1/public/audio/SONG-635b5f63ef4857.90538205.mp3', '/tugas-besar-1/public/img/IMG-635b5f640d5925.34010774.jpg', 7),
-(36, 'Is It The Answer', 'Reality Club', '2022-10-28', 'indie', 232, '/tugas-besar-1/public/audio/SONG-635b5f8acd4820.06738559.mp3', '/tugas-besar-1/public/img/IMG-635b5f8ad2b144.18812872.jpg', 7),
-(37, 'Elastic Hearts', 'Reality Club', '2022-10-28', 'indie', 276, '/tugas-besar-1/public/audio/SONG-635b5fadeceff0.09518531.mp3', '/tugas-besar-1/public/img/IMG-635b5fadf260a0.08419552.jpg', 7),
-(38, 'Alexandra', 'Reality Club', '2022-10-28', 'indie', 248, '/tugas-besar-1/public/audio/SONG-635b5fcb705897.63136012.mp3', '/tugas-besar-1/public/img/IMG-635b5fcb776e81.80844476.jpg', 7),
-(39, '2112', 'Reality Club', '2022-10-28', 'indie', 356, '/tugas-besar-1/public/audio/SONG-635b5fe9e68731.65887024.mp3', '/tugas-besar-1/public/img/IMG-635b5fe9ece9b3.83157826.jpg', 7),
-(40, 'Pupus', 'Dewa', '2022-10-20', 'rock', 306, '/tugas-besar-1/public/audio/SONG-635b688be4f400.67795679.mp3', '/tugas-besar-1/public/img/IMG-635b688bebbdc6.71586685.jpg', NULL);
+(2, 'Separuh Nafas', 'Dewa', '2022-10-19', 'rock', 222, '/binotify-app/public/audio/SONG-635b68521659d5.73505554.mp3', '/binotify-app/public/img/IMG-635b57543a1e91.06315844.jpg', 2),
+(11, 'Diorama', 'Tulus', '2022-10-18', 'pop', 178, '/binotify-app/public/audio/SONG-635a1ad0969c20.38108542.mp3', '/binotify-app/public/img/IMG-635a1ad09f2622.03636239.jpg', 3),
+(16, 'Manusia Kuat', 'Tulus', '2022-10-18', 'pop', 205, '/binotify-app/public/audio/SONG-635b566dda70d8.50096966.mp3', '/binotify-app/public/img/logo-1.jpg', 3),
+(19, 'Monokrom', 'Tulus', '2022-10-18', 'pop', 218, '/binotify-app/public/audio/SONG-635b5b820cd953.03189072.mp3', '/binotify-app/public/img/IMG-6358cea5277a28.93633235.jpg', 3),
+(33, 'Labirin', 'Tulus', '2022-10-18', 'pop', 192, '/binotify-app/public/audio/SONG-635b5c95ddd2c9.34274480.mp3', '/binotify-app/public/img/IMG-635b5c95e4e747.53640522.jpg', NULL),
+(34, 'Sewindu', 'Tulus', '2022-10-18', 'pop', 272, '/binotify-app/public/audio/SONG-635b5cd2448e74.47739002.mp3', '/binotify-app/public/img/IMG-635b5cd2488aa2.24606821.jpg', NULL),
+(35, 'Anything You Want', 'Reality Club', '2022-10-28', 'indie', 277, '/binotify-app/public/audio/SONG-635b5f63ef4857.90538205.mp3', '/binotify-app/public/img/IMG-635b5f640d5925.34010774.jpg', 7),
+(36, 'Is It The Answer', 'Reality Club', '2022-10-28', 'indie', 232, '/binotify-app/public/audio/SONG-635b5f8acd4820.06738559.mp3', '/binotify-app/public/img/IMG-635b5f8ad2b144.18812872.jpg', 7),
+(37, 'Elastic Hearts', 'Reality Club', '2022-10-28', 'indie', 276, '/binotify-app/public/audio/SONG-635b5fadeceff0.09518531.mp3', '/binotify-app/public/img/IMG-635b5fadf260a0.08419552.jpg', 7),
+(38, 'Alexandra', 'Reality Club', '2022-10-28', 'indie', 248, '/binotify-app/public/audio/SONG-635b5fcb705897.63136012.mp3', '/binotify-app/public/img/IMG-635b5fcb776e81.80844476.jpg', 7),
+(39, '2112', 'Reality Club', '2022-10-28', 'indie', 356, '/binotify-app/public/audio/SONG-635b5fe9e68731.65887024.mp3', '/binotify-app/public/img/IMG-635b5fe9ece9b3.83157826.jpg', 7),
+(40, 'Pupus', 'Dewa', '2022-10-20', 'rock', 306, '/binotify-app/public/audio/SONG-635b688be4f400.67795679.mp3', '/binotify-app/public/img/IMG-635b688bebbdc6.71586685.jpg', NULL);
 
 -- --------------------------------------------------------
 

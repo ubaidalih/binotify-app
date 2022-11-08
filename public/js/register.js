@@ -41,7 +41,7 @@ document.getElementById("register-button").addEventListener("click", () => {
         }else {
             var params = 'email='+email+'&username='+username+'&password='+password + '&confirm-password='+confirm_password;
             document.getElementById("fail-upload").innerText = ""
-            http.open("POST", `http://localhost/tugas-besar-1/public/register/register_check`)
+            http.open("POST", `http://localhost/binotify-app/public/register/register_check`)
             http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
             http.send(params)
         }

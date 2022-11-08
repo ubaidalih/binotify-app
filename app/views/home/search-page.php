@@ -19,7 +19,7 @@
     <?php else:?>
         <?php foreach($data['music']['data'] as $index => $song) : ?>
         <div class="music-card">
-            <a href="/tugas-besar-1/public/detaillagu/user/<?php echo $song[0] ?>">
+            <a href="/binotify-app/public/detaillagu/user/<?php echo $song[0] ?>">
                 <div class="info">
                     <h4> <?php echo $index + 1;?> </h4>
                     <img src = "<?php echo $song[4];?>"/>

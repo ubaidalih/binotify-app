@@ -25,7 +25,7 @@ keyword.addEventListener('keyup',function () {
         }
     }
     var params = 'keyword='+keyword.value+'&page='+pages
-    xhr.open('POST', 'http://localhost/tugas-besar-1/public/Home/search', true)
+    xhr.open('POST', 'http://localhost/binotify-app/public/Home/search', true)
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.send(params)
 })
@@ -44,16 +44,16 @@ function goToPage(page){
     var params = 'keyword='+keyword.value+'&page='+pages
     
     if(genreNow!=null){
-        xhr.open('POST', 'http://localhost/tugas-besar-1/public/Home/filter_genre/'+genreNow, true)
+        xhr.open('POST', 'http://localhost/binotify-app/public/Home/filter_genre/'+genreNow, true)
     }
     else if(sorted_by_date){
-        xhr.open('POST', 'http://localhost/tugas-besar-1/public/Home/dateSorted', true)
+        xhr.open('POST', 'http://localhost/binotify-app/public/Home/dateSorted', true)
     }
     else if(sorted_by_title){
-        xhr.open('POST', 'http://localhost/tugas-besar-1/public/Home/tittleSorted', true)
+        xhr.open('POST', 'http://localhost/binotify-app/public/Home/tittleSorted', true)
     }
     else{
-        xhr.open('POST', 'http://localhost/tugas-besar-1/public/Home/search', true)
+        xhr.open('POST', 'http://localhost/binotify-app/public/Home/search', true)
     }
 
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');

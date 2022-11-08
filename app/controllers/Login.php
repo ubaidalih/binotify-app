@@ -32,9 +32,9 @@ class Login extends Controller {
                 setcookie("username", $username, time() + (86400), "/");
                 setcookie("role", $role, time() + (86400), "/");
                 if($role == "1")
-                    header("Location: /tugas-besar-1/public/home/admin");
+                    header("Location: /binotify-app/public/home/admin");
                 else{
-                    header("Location: /tugas-besar-1/public/home/user");
+                    header("Location: /binotify-app/public/home/user");
                 }
             }
         }
@@ -43,7 +43,7 @@ class Login extends Controller {
     // public function submit(){
     //     if (isset($_POST["email"]) and isset($_POST["password"])) {
     //         // $model_path = '../../models/User.php';
-    //         // // $model_path = '/tugas-besar-1/app/models/User.php';
+    //         // // $model_path = '/binotify-app/app/models/User.php';
     //         // require_once($model_path);
     //         // $User = new User();
 

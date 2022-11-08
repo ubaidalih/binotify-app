@@ -42,7 +42,7 @@ class Register extends Controller {
                     echo "<p>Your email is already registered.</p>";
                 }else {
                     if ($this->model('User')->insert_user($email, $hashed_password, $username)) {
-                        header("Location: /tugas-besar-1/public/login/index");
+                        header("Location: /binotify-app/public/login/index");
                         exit();
                     } else {
                         echo "<p>An error occured while we were registering your account. Pls try again.</p>";

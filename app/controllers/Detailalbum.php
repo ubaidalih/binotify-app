@@ -28,7 +28,7 @@ class Detailalbum extends Controller {
 
             // simpen di directory server
 
-            $audio_upload_path = "/tugas-besar-1/public/audio/".$new_file_name;      // ini ganti sesuai directory lagu
+            $audio_upload_path = "/binotify-app/public/audio/".$new_file_name;      // ini ganti sesuai directory lagu
             move_uploaded_file($tmp_name, __DIR__."/../../public/audio/".$new_file_name);
             $durasi = $this->getDuration(__DIR__."/../../public/audio/".$new_file_name);
 
@@ -42,7 +42,7 @@ class Detailalbum extends Controller {
 
             // simpen di directory server
 
-            $file_upload_path = "/tugas-besar-1/public/img/".$new_img_name;   // ini ganti sesuai directory image
+            $file_upload_path = "/binotify-app/public/img/".$new_img_name;   // ini ganti sesuai directory image
             move_uploaded_file($tmp_name, __DIR__."/../../public/img/".$new_img_name);
             return $file_upload_path;
             }
@@ -90,7 +90,7 @@ class Detailalbum extends Controller {
     public function submittambah($album_name, $song_name){
         $result = $this->model("Music")->add_song_to_album($album_name, $song_name);
 
-        header('Location: /tugas-besar-1/public/detailalbum/admin/'. $album_name);
+        header('Location: /binotify-app/public/detailalbum/admin/'. $album_name);
     }
 
     public function hapus($album_name){
@@ -103,13 +103,13 @@ class Detailalbum extends Controller {
     public function submithapus($album_name, $song_name){
         $result = $this->model("Music")->delete_song_from_album($album_name, $song_name);
 
-        header('Location: /tugas-besar-1/public/detailalbum/admin/'. $album_name);
+        header('Location: /binotify-app/public/detailalbum/admin/'. $album_name);
     }
 
     public function delete($album_name){
         $result = $this->model("Album")->delete_album($album_name);
         
-        header('Location: /tugas-besar-1/public/daftaralbum/admin/1');
+        header('Location: /binotify-app/public/daftaralbum/admin/1');
     }
 
     public function edit($album_name){
@@ -147,11 +147,11 @@ class Detailalbum extends Controller {
         echo "<script>console.log('Debug Objects: " . $judul . "' );</script>";
         echo "<script>console.log('Debug Objects: " . $result . "' );</script>";
         if($result){
-            header("location: /tugas-besar-1/public/detailalbum/admin/".$judul);
+            header("location: /binotify-app/public/detailalbum/admin/".$judul);
         }
         else{
             //kasi error message
-            header("location: /tugas-besar-1/public/detailalbum/admin/".$judul);
+            header("location: /binotify-app/public/detailalbum/admin/".$judul);
         }
     }
 
