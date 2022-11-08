@@ -1,0 +1,148 @@
+/* Overwrite browser defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    min-height: 100%;
+    background-color: rgb(12, 12, 12);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    height: 15%;
+    background: black;
+    width: 100%;
+    background: black;
+    position: fixed;
+    overflow: hidden;
+    z-index: 999;
+    order: 1;
+    top: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 76.5rem;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.header-logo img {
+    width: 9rem;
+}
+
+/* Menu on Desktop */
+
+.navbar-desktop{
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.navbar-desktop li {
+    float: left;
+    vertical-align: middle;
+}
+
+.navbar-desktop li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-desktop li a:hover{
+    background-color: #1ed760;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px #6add92;
+    transition: background-color 0.2s ease, box-shadow 0.3s, color 0.3s;
+
+}
+
+
+.search-icon{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.search-icon img{
+    width: 6rem;
+}
+
+.search-bar{
+    padding: 25px;
+    align-items: middle;
+    height: 100%;
+    
+}
+.search-bar input[type=text] {
+    float: right;
+    padding: 6px;
+    align-items: middle;
+    margin-right: 16px;
+    border-radius: 15px;
+    font-size: 17px;
+}
+
+.profpict-logo{
+    float: right;
+    margin-left: 4cm;
+    margin-right: 4px;
+}
+
+.musicContainer {
+    height: 85%;
+    width: 100%;
+    background-image: linear-gradient(180deg, rgb(48, 47, 47), rgb(12, 12, 12));
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    /* overflow-y: scroll; */
+}
+
+.musicContainer section{
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+}

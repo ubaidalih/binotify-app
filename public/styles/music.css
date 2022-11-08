@@ -1,0 +1,308 @@
+.no-result{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    transition: all 0.15s linear;
+    margin: 10px;
+}
+
+h2{
+    color: lightgray;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.no-result > h3{
+    font-family: "Roboto", sans-serif;
+    color: lightgray;
+    margin: 3px 15px;
+}
+
+.music-card{
+    color: lightgray;
+    padding: 5px;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+    transition: all 0.1s linear;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.music-card:hover {
+    background: rgb(87, 86, 86);
+}
+.info {
+    flex: 4;
+    position: relative;
+    align-items: center;
+    /* background: rgb(109, 151, 109); */
+}
+
+.info > h4 {
+    padding: 15px;
+    float: left;
+}
+
+.info img {
+    width: 50px;
+    height: 50px;
+    margin: 0 25px;
+    float: left;
+}
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    float: left;
+    width: 8cm;
+    top: 50%;
+}
+
+.detail h4,
+.detail h5 {
+    font-family: "Roboto", sans-serif;
+    color: lightgray;
+    margin: 3px 15px;
+}
+.artist-name{
+    opacity: 0.3;
+}
+.detail-other{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 7cm;
+    margin-top: 11px;
+}
+
+.detail-other h4{
+    color: lightgray;
+    margin: 3px 15px;
+    align-items: center;
+}
+h6{
+    color: #929292;
+    font-size: larger;
+}
+
+
+.sort-filter-container{
+    float: right;
+    margin-bottom:15px;
+    width: 30%;
+    height: 10%;
+}
+
+.sort-button{
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-left: 15px;
+}
+.sort-button:hover{
+    background-color: #3e8e41;
+}
+
+.dropdown{
+
+    font-family: "Roboto", sans-serif;
+    float: left;
+}
+
+.dropbtn{
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.genre-button{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.genre-button:hover{
+    background-color: #3e8e41;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.pag-section{
+    height: 5%;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    color: white;
+    z-index: 99;
+    bottom: 0;
+}
+.detail-album-img img{
+    width: 150px;
+    height: 150px;
+    margin: 0 25px;
+    float: left;
+}
+
+.detail-album-info h3, p{
+    color: lightgray;
+}
+
+.detail-song-img img{
+    width: 150px;
+    height: 150px;
+    position:sticky;
+    top:20%;
+    left: 44%;
+    float: left;
+}
+
+.detail-song-info h3, p{
+    color: lightgray;
+}
+
+.detail-song-container {
+    margin-top : 25px;
+}
+
+.audio-container {
+    margin-top: 5%;
+    align-items: center;
+}
+
+.button-container a{
+    
+    color: lightgray;
+    float : center;
+    margin-top: 25px;
+    border-radius: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.button-container{
+    position: relative;
+    right: 12%;
+}
+
+.button-container-2 a{
+    
+    color: lightgray;
+    float : right;
+    margin-right:25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.button-container-3 a{
+    color: lightgray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.button-container-3{
+    margin-top: 25px;
+    margin-left: 25px;
+    position: relative;
+    right: 30%;
+}
+
+.button-container-3 #boxes {
+    float : right;
+    margin-right: 25px;
+}
+
+#boxes  {
+    color: rgb(0, 0, 0);
+    background-color: #1ed760;
+    border-radius: 5%;
+    width: 100px;
+    align-content: center;
+    position: relative;
+    left: 28%;
+    text-align: center;
+    height: 25px;
+    width: 200px;
+}
+
+
+audio{
+    width: 100%;
+}
+
+
+img{
+    margin-bottom: 5%;
+    border-radius: 5%;
+    box-shadow:3px;
+}
+.card-text-container{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    font-weight: lighter;
+    color:rgba(230, 230, 230, 0.808);
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 25%;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    top: 2%;
+    border-radius: 5%;
+    background-image: linear-gradient(180deg, rgb(12, 12, 12), rgb(49, 49, 49));
+    padding: 1.5%;
+    transition: 0.3s;
+    width: 25%;
+    right: 37.5%;
+    height: 120%;
+    top: 5%;
+    position: absolute;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding-top: 2px;
+    padding-bottom: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
