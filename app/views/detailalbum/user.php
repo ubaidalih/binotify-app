@@ -14,6 +14,7 @@
             </div>
             <ul class="navbar-desktop">
                 <li><a href="/binotify-app/public/daftaralbum/user/1"> Daftar Album </a></li>
+                <li><a href="/binotify-app/public/daftarpenyanyi/user/1"> Penyanyi Premium </a></li>
                 <li role="separator"> </li>
                 <div class="profpict-logo">
                     <img src="/binotify-app/public/img/profpict.png"/>
