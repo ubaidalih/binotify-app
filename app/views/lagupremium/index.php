@@ -56,8 +56,7 @@
                             </div>
                             <div class="detail-other">
                                 <audio controls>
-                                    <!-- <source src="http://localhost:3000/binotify-rest-service/public/audio/TULUS - Sewindu (Official Music Video)_wpst_4m_c-E.mp3" type="audio/mpeg" > -->
-                                    <source src= <?php echo $data["list_of_song"]->audio_path; ?> type="audio/mpeg" >
+                                    <source src= <?php echo str_replace(' ', '%20', $data["list_of_song"][$index]->audio_path); ?> type="audio/mpeg" >
                                     Your browser does not support the audio element.
                                 </audio>
                             </div>
