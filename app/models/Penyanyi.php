@@ -18,8 +18,8 @@ Class Penyanyi {
         $result = json_decode($result);
         if (count($result) != 0){
             // Pagination
-            $dataEachPage = 5;
             $dataTotal = count($result);
+            $dataEachPage = 5;
             $pageTotal = ceil($dataTotal / $dataEachPage);
 
             $dataStart = ($dataEachPage * $page) - $dataEachPage;
@@ -27,10 +27,11 @@ Class Penyanyi {
 
             //check for subscription in db
             for($i = 0; $i < count($result); $i++){
-                $query = "SELECT * FROM subscription INNER JOIN user WHERE subscriber_id = user_id AND username = '".$_COOKIE['username']."' AND creator_id = '".$result[$i]->user_id."' AND status = 'ACCEPTED'";
+                $query = "SELECT status FROM subscription INNER JOIN user WHERE subscriber_id = user_id AND username = '".$_COOKIE['username']."' AND creator_id = '".$result[$i]->user_id."'";
                 $result2 = $this->db->query($query);
                 if ($result2->num_rows != 0){
-                    $result[$i]->subscribed = true;
+                    $result2 = $result2->fetch_all();
+                    $result[$i]->subscribed = $result2[0][0];
                 }
                 else{
                     $result[$i]->subscribed = false;
