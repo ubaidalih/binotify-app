@@ -2,22 +2,36 @@
 
 class Daftarpenyanyi extends Controller {
     public function index(){
-        $page = $_POST['pageTotal'];
-        $list_of_penyanyi = $this->model("Penyanyi")->get_penyanyi($page);
+        while (true) {
+            $page = $_POST['pageTotal'];
+            $list_of_penyanyi = $this->model("Penyanyi")->get_penyanyi($page);
 
-        $this->view('daftarpenyanyi/index',$list_of_penyanyi);
+            $this->model("Subscription")->refresh();
+            $this->view('daftarpenyanyi/index',$list_of_penyanyi);
+
+            sleep(30);
+        }
     }
 
     public function user($page){
+        $while (true) {
+            $list_of_penyanyi = $this->model("Penyanyi")->get_penyanyi($page);
 
-        $list_of_penyanyi = $this->model("Penyanyi")->get_penyanyi($page);
-        
-        $this->view('daftarpenyanyi/index',$list_of_penyanyi);
+            $this->model("Subscription")->refresh();
+            $this->view('daftarpenyanyi/index',$list_of_penyanyi);
+
+            sleep(30);
+        }
     }
 
     public function penyanyi($page){
-        $list_of_penyanyi = $this->model("Penyanyi")->get_penyanyi($page);
+        while (true) {
+            $list_of_penyanyi = $this->model("Penyanyi")->get_penyanyi($page);
 
-        $this->view('daftarpenyanyi/pagination_page',$list_of_penyanyi);
+            $this->model("Subscription")->refresh();
+            $this->view('daftarpenyanyi/index',$list_of_penyanyi);
+
+            sleep(30);
+        }
     }
 }

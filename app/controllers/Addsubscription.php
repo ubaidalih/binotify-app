@@ -26,11 +26,11 @@
                     echo $e->getMessage(); 
                 }
             }
-            $list_of_penyanyi = $this->model("Penyanyi")->get_penyanyi(1);
+            $result = $this->model("Subscription")->addSubscription($creator_id,$subscriber_id);
 
+            $list_of_penyanyi = $this->model("Penyanyi")->get_penyanyi(1);
             $this->view('daftarpenyanyi/index',$list_of_penyanyi);
 
-            $result = $this->model("Subscription")->addSubscription($creator_id,$subscriber_id);
         }
     }
 ?>
