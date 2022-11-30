@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/binotify-app/public/styles/home.css">
     <link rel="stylesheet" href="/binotify-app/public/styles/music.css">
+    <meta http-equiv="refresh" content="30;URL='http://localhost/binotify-app/public/daftarpenyanyi/user/1'"
 </head>
 <body>
     <header>
