@@ -17,7 +17,8 @@
                     'arg1' => $subscriber_id,
                     'arg2' => $ip,
                     'arg3' => $endpoint,
-                    'arg4' => $desc
+                    'arg4' => $desc,
+                    'arg5' => getenv('APP_API_KEY')
                 );
                 try {
                     $response_param = $client->addSubscript($request_param);
