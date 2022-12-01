@@ -14,18 +14,18 @@ class Daftarpenyanyi extends Controller {
     public function user($page){
 
         
+        $this->model("Subscription")->refresh();
         $list_of_penyanyi = $this->model("Penyanyi")->get_penyanyi($page);
 
-        $this->model("Subscription")->refresh();
         $this->view('daftarpenyanyi/index',$list_of_penyanyi);
 
     }
 
     public function penyanyi($page){
-        
+        $this->model("Subscription")->refresh();
         $list_of_penyanyi = $this->model("Penyanyi")->get_penyanyi($page);
 
-        $this->model("Subscription")->refresh();
+
         $this->view('daftarpenyanyi/index',$list_of_penyanyi);
 
     }

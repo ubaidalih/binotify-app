@@ -1,15 +1,16 @@
-function addSubscription(creator_id,subscriber_id){
-    var xhr = new XMLHttpRequest()
-    xhr.onreadystatechange = function(){
-        if(xhr.readyState == 4 && xhr.status == 200 ){
-            container.innerHTML = xhr.responseText;
-        }
+function addSubscription(creator_id, subscriber_id) {
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      container.innerHTML = xhr.responseText;
     }
-    console.log("adasdsad")
-    console.log(creator_id)
-    console.log(subscriber_id)
-    var params = 'creator_id='+creator_id+'&subscriber_id='+subscriber_id;
-    xhr.open('POST', 'http://localhost/binotify-app/public/Addsubscription/index', true)
-    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    xhr.send(params)
+  };
+  var params = "creator_id=" + creator_id + "&subscriber_id=" + subscriber_id;
+  xhr.open(
+    "POST",
+    "http://localhost/binotify-app/public/Addsubscription/index",
+    true
+  );
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhr.send(params);
 }

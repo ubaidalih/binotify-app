@@ -40,12 +40,19 @@
         public function refresh(){
             $wsdl   = 'http://localhost:3060/binotify-soap-service/subscription?wsdl';
             $client = new SoapClient($wsdl, array('trace'=>1));
-            $response_param = $client->getAllRequest();
+            $request_param = array(
+                'arg0' => "APP_KEY_SECRET"
+            );
+            $response_param = $client->getAllRequest($request_param);
             $array = json_decode(json_encode($response_param),true);
-
-            foreach($array["return"] as $subscript){
-                $this->refreshSubscription($subscript["creator_id"],$subscript["subscriber_id"],$subscript["status"]);
+            if(count($array["return"])<=1){
+                $this->refreshSubscription($array["return"]["creator_id"],$array["return"]["subscriber_id"],$array["return"]["status"]);
+            }else{
+                foreach($array["return"] as $subscript){
+                    $this->refreshSubscription($subscript["creator_id"],$subscript["subscriber_id"],$subscript["status"]);
+                }
             }
+
         }
     }
 ?>

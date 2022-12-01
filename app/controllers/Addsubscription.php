@@ -7,18 +7,12 @@
                 
                 $creator_id = $_POST['creator_id'];
                 $subscriber_id = $_POST['subscriber_id'];
-                $ip = '192.124.2.1';
-                $endpoint = 'perubahan sekarang';
-                $desc = 'POST';
 
                 // web service input param
                 $request_param = array(
                     'arg0' => $creator_id,
                     'arg1' => $subscriber_id,
-                    'arg2' => $ip,
-                    'arg3' => $endpoint,
-                    'arg4' => $desc,
-                    'arg5' => getenv('APP_API_KEY')
+                    'arg2' => "APP_KEY_SECRET"
                 );
                 try {
                     $response_param = $client->addSubscript($request_param);

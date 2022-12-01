@@ -40,6 +40,8 @@ Class Premiumsong {
         $result = curl_exec($ch);
         curl_close($ch);
         $result = json_decode($result);
+        var_dump($result);
+        $resp['list_of_song'] = [];
         if (count($result) != 0){
             // Pagination
             $dataEachPage = 5;
@@ -54,7 +56,7 @@ Class Premiumsong {
             return($resp);
         }
         else{
-            return false;
+            return($resp);
         }
     }
 }
