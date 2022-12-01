@@ -21,14 +21,21 @@ Class Premiumsong {
         curl_close($ch);
         $result = json_decode($result);
         $resp['name'] = $result[0]->name;
-
+        
+        $username = $_COOKIE['username'];
+        $query = "SELECT user_id FROM user WHERE username = '$username'";
+        $result = $this->db->query($query);
+        $result = $result->fetch_all();
+        $user_id = $result[0][0];
         $ch = curl_init();
         $data = array(
-            'user_id' => $penyanyi_id
+            'creator_id' => $penyanyi_id,
+            'subscriber_id' => $user_id
         );
-        $queryString =  http_build_query($data);
-        curl_setopt($ch, CURLOPT_URL, 'http://localhost:3000/api/song/read?'.$queryString);
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+        $data =  http_build_query($data);
+        curl_setopt($ch, CURLOPT_URL, 'http://localhost:3000/api/song/read');
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($ch);
         curl_close($ch);
