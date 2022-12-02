@@ -81,6 +81,8 @@ Install XAMPP, pastikan port untuk Apache dan MySQL tersedia.
 7. Halaman Detail Album : 13520085
 8. Halaman Tambah Lagu dan Album : 13520061
 9. Halaman Daftar User : 13520061
+10. Short Polling : 13520085
+11. Soap Connection : 13520148
 
 ## Client Side
 
@@ -93,3 +95,4 @@ Install XAMPP, pastikan port untuk Apache dan MySQL tersedia.
 7. Halaman Detail Album : 13520085
 8. Halaman Tambah Lagu dan Album : 13520061
 9. Halaman Daftar User : 13520061
+10. Halaman Penyanyi Premium : 13520061
