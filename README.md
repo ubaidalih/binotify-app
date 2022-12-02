@@ -66,7 +66,7 @@ Install XAMPP, pastikan port untuk Apache dan MySQL tersedia.
 
 ## Halaman Penyanyi Premium
 
-![image_subs.png](./screenshot/image_subs.png)
+![image_subs.jpg](./screenshot/image_subs.jpg)
 
 # Pembagian Tugas
 
