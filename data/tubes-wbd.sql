@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 28, 2022 at 07:31 AM
+-- Generation Time: Dec 02, 2022 at 04:44 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -85,6 +85,18 @@ INSERT INTO `song` (`song_id`, `Judul`, `Penyanyi`, `Tanggal_terbit`, `Genre`, `
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `subscription`
+--
+
+CREATE TABLE `subscription` (
+  `creator_id` int(11) NOT NULL,
+  `subscriber_id` int(11) NOT NULL,
+  `status` enum('PENDING','ACCEPTED','REJECTED') NOT NULL DEFAULT 'PENDING'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user`
 --
 
@@ -127,6 +139,12 @@ ALTER TABLE `album`
 ALTER TABLE `song`
   ADD PRIMARY KEY (`song_id`),
   ADD KEY `album_id` (`album_id`);
+
+--
+-- Indexes for table `subscription`
+--
+ALTER TABLE `subscription`
+  ADD PRIMARY KEY (`creator_id`,`subscriber_id`);
 
 --
 -- Indexes for table `user`
